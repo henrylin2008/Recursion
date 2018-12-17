@@ -42,3 +42,19 @@ def fib_dyn(n):
     cache[n] = fib_dyn(n-1) + fib_dyn(n-2)
     
     return cache[n]
+
+
+# Iteratively
+
+def fib_iter(n):
+    
+    # Set starting point
+    a = 0
+    b = 1
+    
+    # Follow algorithm
+    for i in range(n):
+        
+        a, b = b, a + b
+        
+    return a
